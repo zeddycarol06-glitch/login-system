@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEDTECH | Login & Signup</title>
+
+    <!-- Google Fonts for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+            <a href="#" class="logo">
+                <img src="images/1.png" alt="ZEDTECH logo" class="logo-img">
+            </a>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li id="security-nav-item" style="display:none"><a href="security-dashboard.html" id="security-nav-link">Security</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <!-- HERO / INTRO SECTION -->
+    <section id="home" class="hero-section">
+        <div class="hero-text">
+            <h1>Welcome to ZEDTECH</h1>
+            <p>Your ultimate platform for learning coding and building projects.</p>
+            <a href="#courses" class="login-btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>My Portfolio</h2>
+        <p>Explore projects I have worked on, showcasing web development, design, and more.</p>
+        <!-- You can add portfolio cards or images here -->
+    </section>
+
+    <!-- COURSES SECTION -->
+    <section id="courses" class="courses-section">
+        <h2>Courses Offered</h2>
+        <div class="course-slider">
+            <div class="course-track">
+                <div class="course-item active">
+                    <div class="course-display">
+                        <div class="code-editor">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">index.html</span>
+                            </div>
+                            <div class="editor-body">
+                                <div class="code-line"><span class="ln">1</span><span class="html-tag">&lt;h1&gt;</span><span class="html-text">Hello World</span><span class="html-tag">&lt;/h1&gt;</span></div>
+                                <div class="code-line"><span class="ln">2</span><span class="html-tag">&lt;p&gt;</span><span class="html-text">Welcome...</span><span class="html-tag">&lt;/p&gt;</span></div>
+                                <div class="code-line"><span class="ln">3</span><span class="html-tag">&lt;style&gt;</span></div>
+                                <div class="code-line"><span class="ln">4</span>&nbsp;&nbsp;<span class="css-prop">color</span>: <span class="css-val">#22c55e</span>;</div>
+                                <div class="code-line"><span class="ln">5</span><span class="html-tag">&lt;/style&gt;</span></div>
+                                <div class="code-line cursor-line"><span class="ln">6</span><span class="cursor-blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, JavaScript, and build responsive websites from scratch.</p>
+                </div>
+                <div class="course-item">
+                    <div class="course-display">
+                        <div class="terminal-window">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">python.py</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> <span class="py-kw">import</span> <span class="py-mod">tensorflow</span></div>
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> <span class="py-kw">import</span> <span class="py-mod">numpy</span></div>
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> model = <span class="py-fn">train</span>(data)</div>
+                                <div class="term-line ai-output"><span class="ai-icon">🤖</span> <span class="py-str">AI Model Ready!</span></div>
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> <span class="cursor-blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Python Programming</h3>
+                    <p>Master Python fundamentals and explore data analysis, AI, and automation.</p>
+                </div>
+                <div class="course-item">
+                    <div class="course-display">
+                        <div class="design-canvas">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">design.fig</span>
+                            </div>
+                            <div class="canvas-body">
+                                <div class="canvas-toolbar">
+                                    <span class="tool active-tool">▶</span>
+                                    <span class="tool">◻</span>
+                                    <span class="tool">○</span>
+                                    <span class="tool">T</span>
+                                </div>
+                                <div class="canvas-area">
+                                    <div class="mock-card"></div>
+                                    <div class="mock-btn"></div>
+                                    <div class="mock-avatar"></div>
+                                    <div class="mock-text"></div>
+                                    <div class="mock-text short"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create stunning user interfaces and experiences using Figma and design principles.</p>
+                </div>
+                <div class="course-item">
+                    <div class="course-display">
+                        <div class="graphic-canvas">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">artwork.psd</span>
+                            </div>
+                            <div class="graphic-body">
+                                <div class="graphic-palette">
+                                    <span class="swatch s1"></span>
+                                    <span class="swatch s2"></span>
+                                    <span class="swatch s3"></span>
+                                    <span class="swatch s4"></span>
+                                </div>
+                                <div class="color-wheel"></div>
+                                <div class="pen-tool"></div>
+                                <div class="layer-box">
+                                    <div class="layer-item active-layer"><span class="layer-icon">👁</span> Background</div>
+                                    <div class="layer-item"><span class="layer-icon">👁</span> Logo</div>
+                                    <div class="layer-item"><span class="layer-icon">👁</span> Text</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Graphic Design</h3>
+                    <p>Master Photoshop, Illustrator, and color theory to create stunning visuals and branding.</p>
+                </div>
+                <div class="course-item">
+                    <div class="course-display">
+                        <div class="terminal-window">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">data.ipynb</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> <span class="py-kw">import</span> <span class="py-mod">pandas</span> <span class="py-kw">as</span> <span class="py-mod">pd</span></div>
+                                <div class="chart-bar-row">
+                                    <div class="chart-bar bar-a"></div>
+                                    <div class="chart-bar bar-b"></div>
+                                    <div class="chart-bar bar-c"></div>
+                                    <div class="chart-bar bar-d"></div>
+                                </div>
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> df.<span class="py-fn">mean</span>()</div>
+                                <div class="term-line"><span class="py-str">65.4</span>  <span class="py-str">82.1</span>  <span class="py-str">73.9</span></div>
+                                <div class="term-line"><span class="term-prompt">&gt;&gt;&gt;</span> <span class="cursor-blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Analyze data with Pandas, build charts, and create powerful machine learning models.</p>
+                </div>
+                <div class="course-item">
+                    <div class="course-display">
+                        <div class="terminal-window">
+                            <div class="editor-bar">
+                                <span class="editor-dot red"></span>
+                                <span class="editor-dot yellow"></span>
+                                <span class="editor-dot green"></span>
+                                <span class="editor-title">secure.sh</span>
+                            </div>
+                            <div class="terminal-body">
+                                <div class="term-line"><span class="term-prompt">$</span> <span class="py-mod">sudo</span> firewall <span class="py-fn">enable</span></div>
+                                <div class="term-line"><span class="py-str">✔ Firewall active</span></div>
+                                <div class="term-line shield-line"><span class="shield-icon">🛡</span></div>
+                                <div class="term-line"><span class="term-prompt">$</span> <span class="py-kw">scan</span> <span class="py-mod">--threats</span></div>
+                                <div class="term-line"><span class="py-str">✔ No threats found</span></div>
+                                <div class="term-line"><span class="term-prompt">$</span> <span class="cursor-blink">|</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Learn ethical hacking, network security, and how to protect systems from attacks.</p>
+                </div>
+            </div>
+            <div class="course-dots">
+                <span class="course-dot active" data-index="0"></span>
+                <span class="course-dot" data-index="1"></span>
+                <span class="course-dot" data-index="2"></span>
+                <span class="course-dot" data-index="3"></span>
+                <span class="course-dot" data-index="4"></span>
+                <span class="course-dot" data-index="5"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>
+            ZEDTECH is a platform dedicated to helping learners of all levels gain practical coding skills.
+            Our mission is to make learning programming fun, interactive, and accessible. 
+            Whether you are a beginner or looking to improve your skills, we provide courses, projects, and mentorship to help you succeed.
+        </p>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to collaborate? Reach out to us using the form below or via email.</p>
+        <form action="https://formsubmit.co/zeddycarol06@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="">
+            <div class="input-field">
+                <input type="text" name="name" required>
+                <label>Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-field">
+                <textarea name="message" rows="5" required></textarea>
+                <label>Message</label>
+            </div>
+            <button type="submit">Send Message</button>
+            <p class="form-status"></p>
+        </form>
+        <div class="contact-info">
+            <a href="mailto:zeddycarol06@gmail.com" class="contact-link">
+                <span class="material-symbols-rounded">mail</span>
+                zeddycarol06@gmail.com
+            </a>
+            <a href="https://wa.me/254796488109" target="_blank" class="contact-link">
+                <span class="material-symbols-rounded">call</span>
+                079 648 8109
+            </a>
+        </div>
+    </section>
+
+    <!-- Background Blur for Popup -->
+    <div class="blur-bg-overlay"></div>
+
+    <!-- LOGIN & SIGNUP FORM POPUP -->
+    <div class="form-popup">
+        <!-- LOGIN FORM -->
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Use your personal information to log in.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#" id="login-form">
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account? <a href="#" id="signup-link">Sign Up</a>
+                </div>
+            </div>
+            <span class="close-btn material-symbols-rounded">close</span>
+        </div>
+
+        <!-- SIGNUP FORM -->
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>Sign up to join our community.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGN UP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create Password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree to <a href="#">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+            <span class="close-btn material-symbols-rounded">close</span>
+        </div>
+    </div>
+
+</body>
+</html>
